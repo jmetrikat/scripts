@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/jmetrikat/Code/jmetrikat/scripts/env/bin/python3
 
 # Required parameters:
 # @raycast.schemaVersion 1
@@ -6,7 +6,7 @@
 # @raycast.mode compact
 
 # Optional parameters:
-# @raycast.icon ../img/latex.png
+# @raycast.icon ../img/cmd.png
 # @raycast.argument1 { "type": "text", "placeholder": "expression"}
 # @raycast.packageName jmetrikat
 
