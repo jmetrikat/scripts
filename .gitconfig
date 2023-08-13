@@ -1,0 +1,8 @@
+[core]
+	hooksPath = .githooks
+[user]
+	email = 120120832+jmetrikat@users.noreply.github.com
+	name = Jannis Metrikat
+	signingkey = B223CAC5AAF85615
+[commit]
+	gpgsign = true
