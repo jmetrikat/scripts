@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 INSTALL_PYTHON=python3
 ARGS=(hook-impl --config=.pre-commit-config.yaml --hook-type=pre-push)
