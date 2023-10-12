@@ -30,7 +30,7 @@ ignored_folders = [
 if __name__ == "__main__":
     # Clone Repositories for jmetrikat
     try:
-        repos = g.get_user('jmetrikat').get_repos()
+        repos = g.get_user().get_repos(affiliation="owner", visibility="all")
         cloned_repos = []
 
         if repos is not None:
@@ -49,7 +49,7 @@ if __name__ == "__main__":
             else:
                 print("All repos are already cloned.")
         else:
-            print("error: no repos found in organization")
+            print("Error: No repos found in organization.")
             exit(1)
 
     except Exception as e:

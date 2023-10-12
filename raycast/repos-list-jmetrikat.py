@@ -28,7 +28,7 @@ ignored_folders = [
 
 if __name__ == "__main__":
     try:
-        repos = g.get_user('jmetrikat').get_repos()
+        repos = g.get_user().get_repos(affiliation="owner", visibility="all")
         missing_repos = []
 
         if repos is not None:
