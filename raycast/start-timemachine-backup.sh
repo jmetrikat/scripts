@@ -2,11 +2,15 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Start Time Machine Backup on Homeserver
+# @raycast.title Start Time Machine Backup
 # @raycast.mode silent
+
+# Optional parameters:
+# @raycast.needsConfirmation false
 # @raycast.icon ⏳
 
 # Documentation:
+# @raycast.description Start a Time Machine Backup on Homeserver.
 # @raycast.author jmetrikat
 # @raycast.authorURL https://raycast.com/jmetrikat
 

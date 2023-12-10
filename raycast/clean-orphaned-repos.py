@@ -2,14 +2,15 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Clean orphaned Repos for jmetrikat
+# @raycast.title Clean orphaned Repos
 # @raycast.mode compact
-# @raycast.icon 🗑️
 
 # Optional parameters:
 # @raycast.needsConfirmation true
+# @raycast.icon 🗑️
 
 # Documentation:
+# @raycast.description Clean all repositories that no longer exist on GitHub.
 # @raycast.author jmetrikat
 # @raycast.authorURL https://raycast.com/jmetrikat
 

@@ -2,11 +2,15 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Clone Repos for jmetrikat
+# @raycast.title Clone Repos
 # @raycast.mode silent
+
+# Optional parameters:
+# @raycast.needsConfirmation false
 # @raycast.icon 📥
 
 # Documentation:
+# @raycast.description Clone all repositories to local machine from GitHub.
 # @raycast.author jmetrikat
 # @raycast.authorURL https://raycast.com/jmetrikat
 

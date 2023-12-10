@@ -2,11 +2,15 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title List Repos for jmetrikat
+# @raycast.title List Repos
 # @raycast.mode fullOutput
+
+# Optional parameters:
+# @raycast.needsConfirmation false
 # @raycast.icon 📃
 
 # Documentation:
+# @raycast.description List the status of all all local repositories compared with GitHub.
 # @raycast.author jmetrikat
 # @raycast.authorURL https://raycast.com/jmetrikat
 

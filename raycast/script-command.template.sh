@@ -11,6 +11,7 @@
 # @raycast.mode fullOutput
 #
 # Optional parameters:
+# @raycast.description This could be a description
 # @raycast.icon 🤖
 # @raycast.packageName Raycast Scripts
 
