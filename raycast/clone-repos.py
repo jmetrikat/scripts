@@ -2,8 +2,9 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title List Repos for jmetrikat
-# @raycast.mode fullOutput
+# @raycast.title Clone Repos for jmetrikat
+# @raycast.mode silent
+# @raycast.icon 📥
 
 # Documentation:
 # @raycast.author jmetrikat
@@ -26,30 +27,32 @@ ignored_folders = [
     '.obsidian',
 ]
 
+
 if __name__ == "__main__":
+    # Clone Repositories for jmetrikat
     try:
         repos = g.get_user().get_repos(affiliation="owner", visibility="all")
-        missing_repos = []
+        cloned_repos = []
 
         if repos is not None:
             for repo in repos:
                 # set repo path on local workstation
                 repo_path = f'{ Path.home() }/Code/{repo.owner.login}/{repo.name}'
 
-                current_repo = Repo(f"{ Path.home() }/Code/{repo.owner.login}/{repo.name}")
-
                 # when repo is not existing
                 if not os.path.exists(repo_path):
-                    missing_repos.append(repo.name)
-                    print(f"\033[0;31m○\033[0m {repo.name}")
-                else:
-                    # check if repo has untracked files
-                    if current_repo.untracked_files:
-                        print(f"\033[0;33m●\033[0m {repo.name} (untracked files)")
-                    elif current_repo.is_dirty():
-                        print(f"\033[0;33m●\033[0m {repo.name} (dirty)")
-                    else:
-                        print(f"\033[0;32m●\033[0m {repo.name}")
+                    print(f"  {repo['name']} - {repo['description']}")
+                    Repo.clone_from(repo.ssh_url, repo_path)
+                    cloned_repos.append(repo.name)
+
+            if len(cloned_repos) > 0:
+                print(f"Cloned {len(cloned_repos)} repos.")
+            else:
+                print("All repos are already cloned.")
+        else:
+            print("Error: No repos found in organization.")
+            exit(1)
 
     except Exception as e:
-        print(f"error: {e}")
+        print(f"{e.data['message']}")
+        exit(1)

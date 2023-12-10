@@ -4,6 +4,7 @@
 # @raycast.schemaVersion 1
 # @raycast.title Clean orphaned Repos for jmetrikat
 # @raycast.mode compact
+# @raycast.icon 🗑️
 
 # Optional parameters:
 # @raycast.needsConfirmation true

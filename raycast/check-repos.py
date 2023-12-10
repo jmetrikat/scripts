@@ -3,7 +3,8 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Check Repos for jmetrikat
-# @raycast.mode compact
+# @raycast.mode fullOutput
+# @raycast.icon 🔍
 
 # Documentation:
 # @raycast.author jmetrikat
@@ -41,7 +42,9 @@ if __name__ == "__main__":
                     missing_repos.append(repo.name)
 
             if len(missing_repos) > 0:
-                print(f"You have {len(missing_repos)} missing repos. Consider cloning...")
+                print(f"You have {len(missing_repos)} missing repo{'s' if len(missing_repos) != 1 else ''}. Consider cloning:")
+                for missing_repo in missing_repos:
+                    print(f"\033[0;31m○\033[0m {missing_repo}")
             else:
                 print("All repos are up to date.")
         else:
