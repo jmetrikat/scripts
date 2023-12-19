@@ -2,11 +2,11 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title R
+# @raycast.title R Language
 # @raycast.mode compact
 
 # Optional parameters:
-# @raycast.icon ../images/r.png
+# @raycast.icon ../img/r.png
 # @raycast.argument1 { "type": "text", "placeholder": "expression"}
 # @raycast.packageName jmetrikat
 
