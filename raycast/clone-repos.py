@@ -8,6 +8,7 @@
 # Optional parameters:
 # @raycast.needsConfirmation false
 # @raycast.icon 📥
+# @raycast.packageName jmetrikat
 
 # Documentation:
 # @raycast.description Clone all repositories to local machine from GitHub.

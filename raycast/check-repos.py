@@ -8,6 +8,7 @@
 # Optional parameters:
 # @raycast.needsConfirmation false
 # @raycast.icon 🔍
+# @raycast.packageName jmetrikat
 
 # Documentation:
 # @raycast.description Check that all repositories are locally present.

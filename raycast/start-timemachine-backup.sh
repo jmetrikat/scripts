@@ -8,6 +8,7 @@
 # Optional parameters:
 # @raycast.needsConfirmation false
 # @raycast.icon ⏳
+# @raycast.packageName jmetrikat
 
 # Documentation:
 # @raycast.description Start a Time Machine Backup on Homeserver.

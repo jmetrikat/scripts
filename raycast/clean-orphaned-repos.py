@@ -8,6 +8,7 @@
 # Optional parameters:
 # @raycast.needsConfirmation true
 # @raycast.icon 🗑️
+# @raycast.packageName jmetrikat
 
 # Documentation:
 # @raycast.description Clean all repositories that no longer exist on GitHub.
@@ -51,6 +52,7 @@ if __name__ == "__main__":
                 # delete orphaned repos
                 for repo in orphaned_repos:
                     os.system(f'rm -rf { Path.home() }/Code/jmetrikat/{repo}')
+                    print(f"Deleted {repo}.")
                 print(f"Deleted {len(orphaned_repos)} orphaned repos.")
                 exit(0)
             else:

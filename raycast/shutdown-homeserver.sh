@@ -8,6 +8,7 @@
 # Optional parameters:
 # @raycast.needsConfirmation true
 # @raycast.icon 🔌
+# @raycast.packageName jmetrikat
 
 # Documentation:
 # @raycast.description Send a shutdown command to Homeserver.

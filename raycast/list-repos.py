@@ -8,6 +8,7 @@
 # Optional parameters:
 # @raycast.needsConfirmation false
 # @raycast.icon 📃
+# @raycast.packageName jmetrikat
 
 # Documentation:
 # @raycast.description List the status of all all local repositories compared with GitHub.
