@@ -11,7 +11,7 @@
 # @raycast.packageName jmetrikat
 
 # Documentation:
-# @raycast.description Evaluates a LaTeX expression using Python.
+# @raycast.description Evaluate LaTeX expressions.
 # @raycast.author jmetrikat
 # @raycast.authorURL https://raycast.com/jmetrikat
 

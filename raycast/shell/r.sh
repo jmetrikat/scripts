@@ -15,4 +15,8 @@
 # @raycast.author jmetrikat
 # @raycast.authorURL https://github.com/jmetrikat
 
-echo $1 " = " $(Rscript -e "cat($1)")
+result=$(Rscript -e "cat($1)")
+
+# print result and copy to clipboard
+echo $1 " = " $result
+echo $result | pbcopy
