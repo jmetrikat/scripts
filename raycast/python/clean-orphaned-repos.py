@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Clean orphaned Repos
-# @raycast.mode compact
+# @raycast.mode fullOutput
 
 # Optional parameters:
 # @raycast.needsConfirmation true

@@ -7,7 +7,7 @@
 
 # Optional parameters:
 # @raycast.needsConfirmation false
-# @raycast.icon 🔄
+# @raycast.icon ↙️
 # @raycast.packageName jmetrikat
 
 # Documentation:
