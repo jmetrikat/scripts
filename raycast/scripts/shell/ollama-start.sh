@@ -17,7 +17,7 @@
 
 if ! pgrep -x "ollama" > /dev/null
 then
-  ollama serve
+  ollama serve > /dev/null 2>&1 &
   echo "Ollama server started."
   exit 0
 fi
