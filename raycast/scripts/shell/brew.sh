@@ -14,4 +14,14 @@
 # @raycast.author jmetrikat
 # @raycast.authorURL https://github.com/jmetrikat
 
-brew update && brew upgrade
+if ! command -v brew &> /dev/null; then
+  echo "Error: brew is not installed"
+  exit 1
+fi
+
+if brew update && brew upgrade; then
+  echo "Brew updated and upgraded"
+else
+  echo "Error: Brew update or upgrade failed"
+  exit 1
+fi
