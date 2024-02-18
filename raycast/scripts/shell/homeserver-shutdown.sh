@@ -15,4 +15,8 @@
 # @raycast.author jmetrikat
 # @raycast.authorURL https://raycast.com/jmetrikat
 
-ssh homeserver "sudo shutdown"
+if ssh homeserver "sudo shutdown"; then
+  echo "Homeserver will shutdown in 1 minute."
+else
+  echo "Error: Failed to send shutdown command to Homeserver."
+fi
