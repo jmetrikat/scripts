@@ -15,7 +15,7 @@
 # @raycast.author jmetrikat
 # @raycast.authorURL https://github.com/jmetrikat
 
-result=$(echo $1 | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr '_' '-' | sed 's/--/-/g')
+result=$(echo $1 | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr '_' '-' | sed 's/--/-/g' | sed 's/[(){}]//g' | sed 's/^-//g' | sed 's/-$//g')
 
 # print result and copy to clipboard
 echo "Copied to clipboard: " $result
