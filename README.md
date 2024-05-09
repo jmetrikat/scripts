@@ -6,3 +6,20 @@
 
 
 Bash and Python scripts for smoother workflows with Raycast.
+
+## Installation
+1. Create a virtual python environment:
+```shell
+python3.12 -m venv env
+```
+
+2. Install the required python packages:
+```shell
+env/bin/pip3.12 install -r requirements.txt
+```
+
+## Usage
+Run a script using the virtual environment:
+```shell
+env/bin/python3.12 <script_name>.py
+```
