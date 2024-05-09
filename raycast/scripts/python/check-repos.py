@@ -1,4 +1,4 @@
-#!/Users/jmetrikat/Code/jmetrikat/scripts/env/bin/python3
+#!/Users/jmetrikat/Code/jmetrikat/scripts/env/bin/python3.12
 
 # Required parameters:
 # @raycast.schemaVersion 1
